@@ -15,7 +15,7 @@ pipeline {
         stage('Run container') {
             steps {
                 sh 'docker build -t helloworldjava .'
-                sh 'docker run -it helloworldjava'
+                sh 'docker run helloworldjava'
                 sh 'docker ps'
                 sh 'docker ps -a'
             }
