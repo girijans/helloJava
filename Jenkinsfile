@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git 'https://github.com/girijans/helloJava.git/'
+                git 'https://github.com/girijans/helloJava.git'
                 sh 'pwd'
                 }
         }
